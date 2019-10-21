@@ -6,11 +6,18 @@ const port = process.env.PORT || 3000
 
 app.get('/', function(req, res){
     res.send({
-        ej1: 'Escribe la dirección https://exam2-a01273884.herokuapp.com/students/A01273884, para visualizar info de Luis Angeles',
-        ej2: 'Escribe la dirección https://exam2-a01273884.herokuapp.com/students/A01273334, para visualizar error de matricula no disp',
-        ej3: 'Esribe la dirección https://exam2-a01273884.herokuapp.com/met?search=sunflower',
-        ej4: 'Esribe la dirección https://exam2-a01273884.herokuapp.com/met?search=goku para que constituents sea null',
-        je5: 'Error cuando no se encuentra un search https://exam2-a01273884.herokuapp.com/?search=sunflower389283923'
+        EJ1: 'INFO DE ESTUDIANTE LUIS ANGELES',
+        ej1: 'https://exam2-a01273884.herokuapp.com/students/A01273884',
+        EJ2: 'INFO DE OTRA MATRICULA',
+        ej2: 'https://exam2-a01273884.herokuapp.com/students/A01273334',
+        EJ3: 'SEARCH SUNFLOWER',
+        ej3: 'https://exam2-a01273884.herokuapp.com/met?search=sunflower',
+        EJ4: 'SEARCH CON ERROR QUE NO EXISTE CONSTITUENT',
+        ej4: 'https://exam2-a01273884.herokuapp.com/met?search=goku',
+        EJ5: 'SEARCH INCORRECTA',
+        ej5: 'https://exam2-a01273884.herokuapp.com/met?search=sunflower389283923',
+        EJ6: 'NO SEARCH',
+        ej6: 'https://exam2-a01273884.herokuapp.com/met'
     })
 })
 
