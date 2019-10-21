@@ -6,10 +6,11 @@ const port = process.env.PORT || 3000
 
 app.get('/', function(req, res){
     res.send({
-        ej1: 'Escribe la dirección /students/A01273884, para visualizar info de Luis Angeles',
-        ej2: 'Esribe la dirección /met?search=sunflower',
-        ej3: 'Esribe la dirección /met?search=goku para que constituents sea null',
-        je4: 'Error cuando no se encuentra un search'
+        ej1: 'Escribe la dirección https://exam2-a01273884.herokuapp.com/students/A01273884, para visualizar info de Luis Angeles',
+        ej2: 'Escribe la dirección https://exam2-a01273884.herokuapp.com/students/A01273334, para visualizar error de matricula no disp',
+        ej3: 'Esribe la dirección https://exam2-a01273884.herokuapp.com/met?search=sunflower',
+        ej4: 'Esribe la dirección https://exam2-a01273884.herokuapp.com/met?search=goku para que constituents sea null',
+        je5: 'Error cuando no se encuentra un search https://exam2-a01273884.herokuapp.com/?search=sunflower389283923'
     })
 })
 
@@ -73,7 +74,7 @@ app.get('/met', function(req, res){
 
 app.get('*', function(req, res){
     res.send({
-        error: 'Dirección no encontrada prueba con /'
+        error: 'Dirección no encontrada prueba con  https://exam2-a01273884.herokuapp.com/'
     })
 })
 

@@ -36,8 +36,11 @@ const metobjectID = function(id, callback){
             }
             callback(ERR, undefined)
         }
+        else if(response.body.message){
+            callback('OBJECTID no existe posible error de API', undefined)
+        }
         else{
-            if(response.body.constituents==null){
+            if(response.body.constituents==null){ //error cuando constituents es null
                 info = {
                     artist : 'Not available',
                     title: response.body.title,
